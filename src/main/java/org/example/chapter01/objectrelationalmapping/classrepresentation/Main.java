@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chapter01.objectrelationalmapping.classrepresentation;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,7 +11,7 @@ public class Main {
         employee.setId(1L);
         employee.setName("Foo");
 
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myApp");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myApp1");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();

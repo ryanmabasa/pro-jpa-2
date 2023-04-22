@@ -1,0 +1,9 @@
+Request: Delineated by a specific client method request.
+
+Session: Starts on initiation from an HTTP client and ends on the termination of the HTTP session. It is shared by all requests in the same HTTP session.
+
+Application: Global to the entire application for as long as it is active.
+
+Conversation: Spans a series of sequential Jakarta Faces requests.
+
+Transaction: Maps to the lifetime of an active Jakarta Transactions transaction.
