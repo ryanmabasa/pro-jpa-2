@@ -1,4 +1,4 @@
-package org.example.chapter01.objectrelationalmapping.classrepresentation;
+package org.example.chapter03.manytoone;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -12,11 +12,10 @@ public class Employee {
     private String name;
 
     @Column
-    @Temporal(TemporalType.DATE)
-    private Date startDate;
-
-    @Column
     private long salary;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="DEPT_ID")
+    private Department department;
 
     public Long getId() {
         return id;
@@ -34,19 +33,19 @@ public class Employee {
         this.name = name;
     }
 
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
     public long getSalary() {
         return salary;
     }
 
     public void setSalary(long salary) {
         this.salary = salary;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }

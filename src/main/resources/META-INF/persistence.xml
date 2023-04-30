@@ -9,7 +9,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <properties>
             <!--user home dir -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/testdb1" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/testdb" />
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.user" value="sa" />
             <property name="javax.persistence.jdbc.password" value="" />
