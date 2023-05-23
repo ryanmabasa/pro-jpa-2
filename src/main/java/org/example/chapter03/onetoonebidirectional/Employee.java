@@ -1,8 +1,8 @@
-package org.example.chapter03.onetoone;
+package org.example.chapter03.onetoonebidirectional;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 public class Employee {
 
     @Id

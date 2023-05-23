@@ -1,4 +1,4 @@
-package org.example.chapter03.manytoone;
+package org.example.chapter03.onetoonebidirectional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

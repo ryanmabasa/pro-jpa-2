@@ -1,10 +1,9 @@
-package org.example.chapter03.onetoone;
+package org.example.chapter03.manytooneunidirectional;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Department {
     @Id
     private Long id;

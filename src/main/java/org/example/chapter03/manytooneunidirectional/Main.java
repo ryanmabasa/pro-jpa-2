@@ -1,4 +1,4 @@
-package org.example.chapter03.onetoone;
+package org.example.chapter03.manytooneunidirectional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,12 +15,7 @@ public class Main {
         department.setName("SM");
         department.setId(1L);
 
-        ParkingSpace parkingSpace = new ParkingSpace();
-        parkingSpace.setId(1L);
-        parkingSpace.setEmployee(employee);
-
         employee.setDepartment(department);
-        employee.setParkingSpace(parkingSpace);
 
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myApp1");

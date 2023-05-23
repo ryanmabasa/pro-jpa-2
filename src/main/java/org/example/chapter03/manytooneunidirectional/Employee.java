@@ -1,7 +1,6 @@
-package org.example.chapter03.manytoone;
+package org.example.chapter03.manytooneunidirectional;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 //@Entity
 public class Employee {

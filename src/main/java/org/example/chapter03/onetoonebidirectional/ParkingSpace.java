@@ -1,11 +1,11 @@
-package org.example.chapter03.onetoone;
+package org.example.chapter03.onetoonebidirectional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-@Entity
+//@Entity
 public class ParkingSpace {
 
     @Id
